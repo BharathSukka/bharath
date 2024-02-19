@@ -1,0 +1,24 @@
+pipeline {
+	agent any
+		stages {
+			stage (Plan) {
+				steps {
+					sh "git init"
+					sh "git pull https://github.com/BharathSukka/bharath.git"
+					sh "ls"
+					sh "git log --oneline"
+					echo "plan a project"
+					}
+				}
+			stage (Build) {
+				steps {
+					echo "Buid a Project"
+					}
+				}
+			stage (Test) {
+				steps {
+					echo "Test a project"
+					}
+				}
+			}
+	}
