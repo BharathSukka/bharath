@@ -1,7 +1,7 @@
 pipeline {
 	agent any
 		stages {
-			stage (Plan) {
+			stage ("Plan") {
 				steps {
 					echo "this is git"
 					sh "git init"
@@ -11,12 +11,12 @@ pipeline {
 					echo "plan a project"
 					}
 				}
-			stage (Build) {
+			stage ("Build") {
 				steps {
 					echo "Buid a Project"
 					}
 				}
-			stage (Test) {
+			stage ("Test") {
 				steps {
 					echo "Test a project"
 					}
