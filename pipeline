@@ -3,6 +3,7 @@ pipeline {
 		stages {
 			stage (Plan) {
 				steps {
+					echo "this is git"
 					sh "git init"
 					sh "git pull https://github.com/BharathSukka/bharath.git"
 					sh "ls"
