@@ -1,8 +1,7 @@
 pipeline {
-	agent {
-		label "test"
-		}
-		stages {
+	agent any
+
+				stages {
 			stage ("Plan") {
 				steps {
 					echo "this is git"
